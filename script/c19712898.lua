@@ -26,7 +26,6 @@ function s.initial_effect(c)
 	e2:SetOperation(s.indesop)
 	c:RegisterEffect(e2)
 end
-end
 function s.spfilter(c,e,tp)
 	return c:IsSetCard(0xa008) and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
 end
@@ -65,4 +64,5 @@ function s.indesop(e,tp,eg,ep,ev,re,r,rp)
 		e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END,2)
 		tc:RegisterEffect(e1)
 	end
+
 end
