@@ -21,8 +21,8 @@ local function contains(tbl,val)
 end
 
 -- groups
-s.groupX={8487449,73580471,23874409,66976526,25904894,511001992} -- IDs of monsters you can banish
-s.groupY={85545073,93300002,511001992,511001993} -- IDs of monsters you can summon
+s.groupX={8487449,73580471,23874409,66976526,25904894,34408491} -- IDs of monsters you can banish
+s.groupY={85545073,93300002,34408491,8763963} -- IDs of monsters you can summon
 
 -- You must have at least 1 summonable monster in Extra Deck
 function s.con(e,tp,eg,ep,ev,re,r,rp)
@@ -64,3 +64,4 @@ function s.activate(e,tp,eg,ep,ev,re,r,rp)
 	end
 
 end
+
